@@ -1,4 +1,4 @@
 <?php
-    exec("git pull",$output);
-    print_r($output);
+    $output = system("git pull");
+    echo "<pre>$output</pre>";
 ?>
