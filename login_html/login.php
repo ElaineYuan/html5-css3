@@ -4,7 +4,7 @@ $username = $_POST['login'];
 $password = $_POST['password'];
 
 echo htmlspecialchars($_POST['login'])'输入的用户名<br />';
-echo MD5($password)'输入的密码加密后：<br />';
+echo MD5($_POST['password'])'输入的密码加密后：<br />';
 
 //检测用户名及密码是否正确
 if($username=='pianpian'&&$password=='ypp'){
