@@ -1,8 +1,5 @@
 <?PHP
 
-if(!isset($_POST['submit'])){
-    exit('非法访问!');
-}
 $username = htmlspecialchars($_POST['login']);
 $password = MD5($_POST['password']);
 
